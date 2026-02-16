@@ -29,3 +29,14 @@ nav{
     border: 1px solid #d3d3d3;
     border-radius: 6px;
 }
+
+
+.home {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 16px;
+    margin-top: 18px;
+    background: #fff;
+    border: 1px solid #d3d3d3;
+    border-radius: 6px;
+}
