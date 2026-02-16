@@ -59,4 +59,16 @@ nav{
     flex-wrap: wrap;
 }
 
+.nav-links a {
+    text-decoration: none;
+    display: flex;
+    padding: 8px 16px;
+    border: 1px solid #bdbdbd;
+    border-radius: 4px;
+    background: #ffffff;
+    font-weight: 600;
+}
 
+.nav-links li {
+    list-style: none;
+}
