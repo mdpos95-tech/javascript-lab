@@ -11,4 +11,11 @@ header {
   color: #fff;
   padding: 1rem;
   text-align: center;
+  padding-top: 24px;
+}
+
+footer{
+    max-width: fit-content;
+    margin: 0 auto;
+    padding: 1rem;
 }
