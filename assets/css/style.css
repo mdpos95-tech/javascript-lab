@@ -100,13 +100,12 @@ nav {
     border-radius: 6px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
     display: inline-block;
-}
-
-.top-audio {
     display: flex;
     justify-content: flex-end;
-    padding: 10px 16px;
+    color: #111;
+    
 }
+
 
 .back-to-top {
     position: fixed;
