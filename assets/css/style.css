@@ -143,3 +143,25 @@ nav {
     color: #111;
     font-size: 0.9rem;
 }
+
+.quiz-cta {
+    text-align: center;
+    margin-top: 16px;
+    justify-content: center;
+}
+
+.quiz-btn {
+    display: inline-block;
+    padding: 12px 24px;
+    background: rgba(255, 255, 255, 0.9);
+    border: 1px solid #d3d3d3;
+    border-radius: 10px;
+    text-decoration: none;
+    color: #222;
+    font-weight: bold;
+}
+
+.quiz-btn:hover {
+    background: rgba(255, 255, 255, 1);
+    color: #000;
+}
