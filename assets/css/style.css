@@ -193,3 +193,11 @@ p{
     line-height: 1.7;
     max-width: 720px;
 }
+
+ul{
+    margin-left: 20px;
+}
+
+li{
+    margin-bottom: 6px;
+}
