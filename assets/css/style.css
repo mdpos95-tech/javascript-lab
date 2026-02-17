@@ -165,3 +165,11 @@ nav {
     background: rgba(255, 255, 255, 1);
     color: #000;
 }
+
+
+main {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 32px 48px;
+}
+
