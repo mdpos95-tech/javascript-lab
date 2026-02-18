@@ -98,6 +98,21 @@ nav {
 
 }
 
+.nav-links li:nth-child(2) a,
+.nav-links li:nth-child(4) a {
+    background: #c9a24d;
+    color: #333;
+     font-weight: bold;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    list-style: none;
+    display: flex;
+    gap: 30px;
+   
+}
+
 .nav-links a {
     text-decoration: none;
     display: flex;
