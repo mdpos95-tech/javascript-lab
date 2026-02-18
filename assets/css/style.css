@@ -345,3 +345,11 @@ font-style: italic;
     color: #fff;
     text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
 }
+
+.quiz-left ul li{
+    padding: 6px 12px;
+    margin-bottom: 8px;
+    border: 1px solid rgba(255, 255, 255, 0.8);
+    border-radius: 6px;
+    background: rgba(0, 0, 0, 0.2);
+}
