@@ -152,6 +152,9 @@ nav {
     text-align: center;
     margin-top: 16px;
     justify-content: center;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
 }
 
 .quiz-btn {
@@ -162,7 +165,8 @@ nav {
     border-radius: 10px;
     text-decoration: none;
     color: #222;
-    font-weight: bold;
+    font-weight:  600;
+    text-align: center;
 }
 
 .quiz-btn:hover {
@@ -292,5 +296,9 @@ font-style: italic;
     gap: 16px;
    align-items: flex-start;
    flex-wrap: wrap;
+}
+
+.quiz-left {
+    flex: 1 1 320px;
 }
 
