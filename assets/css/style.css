@@ -289,6 +289,7 @@ font-style: italic;
     border-radius: 10px;
     position: relative;
     z-index: 1;
+    color: #fff;
 
 
 }
@@ -316,7 +317,7 @@ font-style: italic;
     inset: 12px;
     background-image: url("/assets/images/iron_throne.png");
     border-radius: 8px;
-    opacity: 0.25;
+    opacity: 0.9;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -329,3 +330,18 @@ font-style: italic;
     z-index: 1;
 }
 
+.quiz-card::after{
+    content: "";
+    position: absolute;
+    inset: 12px;
+    background: rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    z-index: 1;
+    pointer-events: none;
+}
+
+
+.quiz-card h2, .quiz-card p {
+    color: #fff;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+}
