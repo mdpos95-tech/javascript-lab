@@ -271,3 +271,12 @@ font-style: italic;
 .home-left p{
     font-style: italic;
 }
+
+.home-below {
+    margin-top: 24px;
+    padding: 16px;
+    background: rgba(255, 255, 255, 0.6);
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 14px;
+}
+
