@@ -302,3 +302,21 @@ font-style: italic;
     flex: 1 1 320px;
 }
 
+.quiz-section{
+    position: relative;
+    overflow: hidden;
+}
+
+.quiz-section::before {
+    content: "";
+    position: absolute;
+    background-image: url("/assets/images/iron_throne.png");
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
