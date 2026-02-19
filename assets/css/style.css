@@ -353,7 +353,7 @@ li {
 .quiz-card::before {
     content: "";
     position: absolute;
-    inset: 12px;
+    inset: 0;
     background-image: url("/assets/images/iron_throne.png");
     border-radius: 8px;
     opacity: 0.9;
@@ -400,3 +400,6 @@ li {
     color: rgba(255, 255, 255, 0.8);
 }
 
+.hidden {
+    display: none !important;
+}
