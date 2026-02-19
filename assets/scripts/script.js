@@ -6,3 +6,5 @@ if
 
 startBtn.addEventListener('click', (event) => {
     event.preventDefault();
+    console.log('Start Quiz button clicked!');
+    alert('Quiz starting...');
