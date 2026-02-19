@@ -1,1 +1,2 @@
-document.getElementById('quiz-start')
+
+const startBtn = document.getElementById('quiz-start')
