@@ -23,6 +23,13 @@ startBtn.addEventListener('click', (event) => {
             correctIndex: 0}];
 
             let currentQuestionIndex = 0;
-
+            function renderQuestion() {
+                const q = questions[currentQuestionIndex];
+                quizContainer.innerHTML = `
+                <h2 class="quiz-title"Question 1</h2>
+                <p class="quiz-question">${q.text}</p>
+                <div class="quiz-answers"></div>';
+                const answersDiv = quizContainer.querySelector('.answers');
+                q.answers.forEach((answer, index) => {
+                
 }); 
-});
