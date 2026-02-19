@@ -1,4 +1,4 @@
-
+document.addEventListener('DOMContentLoaded', () => {
 const startBtn = document.getElementById('quiz-start')
 if
 (!startBtn) {
