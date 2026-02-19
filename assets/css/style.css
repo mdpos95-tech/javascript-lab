@@ -329,6 +329,7 @@ li {
     position: relative;
     z-index: 1;
     color: #fff;
+    min-height: 420px;
 
 
 }
