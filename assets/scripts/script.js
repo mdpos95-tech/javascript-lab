@@ -17,5 +17,12 @@ startBtn.addEventListener('click', (event) => {
     Intro.classList.add('hidden');
     quizContainer.classList.remove('hidden');
 
+    const questions = [
+        { text: What is the name of the sword given to Jon Snow by Jeor Mormont?,
+            answers: ["Longclaw", "Oathkeeper", "Ice","Heartstopper"],
+            correctIndex: 0}];
+
+            let currentQuestionIndex = 0;
+
 }); 
 });
