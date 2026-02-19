@@ -432,3 +432,7 @@ li {
     background: rgba(255, 255, 255, 0.18);
     transform: translateY(-1px);
 }
+
+.quiz-questions {
+    font-size: 1.3rem;
+}
