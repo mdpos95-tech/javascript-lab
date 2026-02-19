@@ -404,3 +404,14 @@ li {
 .hidden {
     display: none !important;
 }
+
+.quiz-options {
+    list-style: none;
+    padding: 0;
+    margin: 24px 0;
+}
+
+.quiz-options li {
+    margin-bottom: 12px;
+}
+
