@@ -26,7 +26,7 @@ startBtn.addEventListener('click', (event) => {
             function renderQuestion() {
                 const q = questions[currentQuestionIndex];
                 quizContainer.innerHTML = `
-                <h2 class="quiz-title"Question 1</h2>
+                <h2 class="quiz-title">Question ${currentQuestionIndex + 1}</h2>
                 <p class="quiz-question">${q.text}</p>
                 <div class="quiz-answers"></div>`;
                 const answersDiv = quizContainer.querySelector('.quiz-answers');
@@ -41,5 +41,6 @@ startBtn.addEventListener('click', (event) => {
                 });
             }       
             renderQuestion();
+        });
                 
 });

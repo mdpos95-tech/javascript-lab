@@ -411,11 +411,11 @@ li {
     margin: 24px 0;
 }
 
-.quiz-options li {
+.quiz-answers li {
     margin-bottom: 12px;
 }
 
-.quiz-options button{
+.quiz-answers button{
     width: 100%;
     padding: 12px 18px;
     background: rgba(0, 0, 0, 0.5);
@@ -428,7 +428,7 @@ li {
     color: #fff;
 }
 
-.quiz-options button:hover {
+.quiz-answers button:hover {
     background: rgba(255, 255, 255, 0.18);
     transform: translateY(-1px);
 }
