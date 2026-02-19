@@ -28,19 +28,25 @@ startBtn.addEventListener('click', (event) => {
                 quizContainer.innerHTML = `
                 <h2 class="quiz-title">Question ${currentQuestionIndex + 1}</h2>
                 <p class="quiz-question">${q.text}</p>
-                <div class="quiz-answers"></div>`;
+                <div class="quiz-answers"></div>
+                <p class="quiz-feedback"></p>`;
                 const answersDiv = quizContainer.querySelector('.quiz-answers');
+                const feedback = quizContainer.querySelector('.quiz-feedback');
                 q.answers.forEach((answer, index) => {
                     const btn = document.createElement('button');
                     btn.className = 'answer-btn';
                     btn.textContent = answer;
                     btn.addEventListener('click', () => {
-                        alert(index === q.correctIndex ? 'Correct! ✅' : 'Wrong! ❌');
+                        const isCorrect = index === q.correctIndex;
+                        feedback.textContent = isCorrect ? 'Correct! ✅' : 'Wrong! ❌';
 });
                     answersDiv.appendChild(btn);
                 });
             }       
-            renderQuestion();
+            renderQuestion(); 
+
+
+
         });
                 
 });
