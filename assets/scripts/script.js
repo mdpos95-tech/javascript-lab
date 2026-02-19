@@ -32,13 +32,26 @@ startBtn.addEventListener('click', (event) => {
                 <p class="quiz-feedback"></p>`;
                 const answersDiv = quizContainer.querySelector('.quiz-answers');
                 const feedback = quizContainer.querySelector('.quiz-feedback');
+                let answered = false;
                 q.answers.forEach((answer, index) => {
                     const btn = document.createElement('button');
                     btn.className = 'answer-btn';
                     btn.textContent = answer;
                     btn.addEventListener('click', () => {
+                        if (answered) return;
+                        answered = true;
                         const isCorrect = index === q.correctIndex;
                         feedback.textContent = isCorrect ? 'Correct! ✅' : 'Wrong! ❌';
+                        const allButtons = answersDiv.querySelectorAll('.answer-btn');
+                        allButtons.forEach(btn => btn.disabled = true);
+                        currentQuestionIndex++;
+                        setTimeout(() => {
+                            if (currentQuestionIndex < questions.length) {
+                                renderQuestion();
+                            } else {
+                                quizContainer.innerHTML = `<h2 class="quiz-title">Quiz Completed!</h2><p class="quiz-feedback">Thanks for playing! 🎉</p>`;
+                            }
+                        }, 700);
 });
                     answersDiv.appendChild(btn);
                 });
