@@ -18,7 +18,7 @@ startBtn.addEventListener('click', (event) => {
     quizContainer.classList.remove('hidden');
 
     const questions = [
-        { text: What is the name of the sword given to Jon Snow by Jeor Mormont?,
+        { text: "What is the name of the sword given to Jon Snow by Jeor Mormont?",
             answers: ["Longclaw", "Oathkeeper", "Ice","Heartstopper"],
             correctIndex: 0}];
 
@@ -28,8 +28,18 @@ startBtn.addEventListener('click', (event) => {
                 quizContainer.innerHTML = `
                 <h2 class="quiz-title"Question 1</h2>
                 <p class="quiz-question">${q.text}</p>
-                <div class="quiz-answers"></div>';
-                const answersDiv = quizContainer.querySelector('.answers');
+                <div class="quiz-answers"></div>`;
+                const answersDiv = quizContainer.querySelector('.quiz-answers');
                 q.answers.forEach((answer, index) => {
+                    const btn = document.createElement('button');
+                    btn.className = 'answer-btn';
+                    btn.textContent = answer;
+                    btn.addEventListener('click', () => {
+                        alert(index === q.correctIndex ? 'Correct! ✅' : 'Wrong! ❌');
+});
+                    answersDiv.appendChild(btn);
+                });
+            }       
+            renderQuestion();
                 
-}); 
+});
