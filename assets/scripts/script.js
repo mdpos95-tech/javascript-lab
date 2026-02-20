@@ -1,5 +1,9 @@
 document.addEventListener('DOMContentLoaded', () => {
     const startBtn = document.getElementById('quiz-start')
+    const backToTopBtn = document.querySelector('back-to-top');
+    window.addEventListener('scroll', () => {
+        const scrollPosition = window.scrollY + window.innerHeight;
+        const pa
     if
         (!startBtn) {
         console.warn('Start quiz button not found. Check the HTML for an element with id "quiz-start".'); return;
