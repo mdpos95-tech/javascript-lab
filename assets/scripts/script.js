@@ -1,19 +1,21 @@
 document.addEventListener('DOMContentLoaded', () => {
     const startBtn = document.getElementById('quiz-start');
-    const backToTopBtn = document.querySelector('back-to-top');
+    const backToTopBtn = document.querySelector('.back-to-top');
     if (!backToTopBtn) {
         console.warn('Back to top button not found');}
         else{
+            backToTopBtn.style.display = 'none';
     window.addEventListener('scroll', () => {
         const scrollPosition = window.scrollY + window.innerHeight;
         const pageHeight = document.documentElement.scrollHeight;
-        if (scrollPosition >= pageHeight - 200) {
-            backToTopBtn.computedStyleMap.display = 'block';
+        if (scrollPosition >= pageHeight - 600) {
+            backToTopBtn.style.display = 'block';
         }else {
-            backToTopBtn.computedStyleMap.display = 'none';
+            backToTopBtn.style.display = 'none';
         }
     });
     backToTopBtn.addEventListener('click', () => {
+        e.preventDefault();
         window.scrollTo({ top: 0, behavior: 'smooth' });
     });
 }
