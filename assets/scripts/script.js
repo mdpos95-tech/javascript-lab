@@ -113,16 +113,16 @@ document.addEventListener('DOMContentLoaded', () => {
                                 message = 'Perfect score! You truly rule Westeros! 👑';
                             } else if (score >= 7) {
                                 title = 'Kingsguard ⭐⭐⭐⭐';
-                            message = '';
+                            message = 'A noble score! You are a true protector of the realm! 🛡️';
                             } else if (score >= 5) {
                                 title = 'Household knight ⭐⭐⭐';
-                                message = '';
+                                message = 'Resoectable! You have a good grasp of Westeros, but there is room for improvement! ⚔️';
                             } else if (score >= 3) {
                                 title = 'Hedge knight ⭐⭐';
-                                message = '';
+                                message = 'You have some knowledge of Westeros, but you are still a wandering knight without a lord! 🏇';
                             } else {
                                 title = 'Hot Pie ⭐';
-                                message = '';
+                                message = 'Well, at least you know how to bake a good pie! You might want to rewatch the series and try again! 🥧';
                             }
                             quizContainer.innerHTML = `<h2 class="quiz-title">${title}</h2><p class="quiz-feedback">${message}</p>`;
                             const restartBtn = document.createElement('button');
