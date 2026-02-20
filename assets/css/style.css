@@ -494,10 +494,57 @@ li {
         gap: 10px;
     }
 
-    .home-layout{
+    .home-layout {
         display: flex;
         flex-direction: column;
         gap: 16px;
     }
 
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    #quiz-container,
+    .quiz-container {
+        width: 100%;
+        max-width: 520px;
+        margin: 0 auto;
+    }
+
+    button {
+        max-width: 100%;
+        white-space: normal;
+    }
+
+}
+
+@media (max-width: 480px) {
+
+    h1 {
+        font-size: 1.6rem;
+    }
+
+    h2 {
+        font-size: 1.2rem;
+    }
+
+    p,
+    li {
+        font-size: 0.95rem;
+    }
+
+    .quiz-answers button {
+        width: 100%;
+        padding: 14px 16px;
+        font-size: 1rem;
+    }
+
+    .back-to-top {
+        bottom: 14px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .home-layou
 }
