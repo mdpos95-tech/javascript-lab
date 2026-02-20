@@ -1,9 +1,22 @@
 document.addEventListener('DOMContentLoaded', () => {
-    const startBtn = document.getElementById('quiz-start')
+    const startBtn = document.getElementById('quiz-start');
     const backToTopBtn = document.querySelector('back-to-top');
+    if (!backToTopBtn) {
+        console.warn('Back to top button not found');}
+        else{
     window.addEventListener('scroll', () => {
         const scrollPosition = window.scrollY + window.innerHeight;
-        const pa
+        const pageHeight = document.documentElement.scrollHeight;
+        if (scrollPosition >= pageHeight - 200) {
+            backToTopBtn.computedStyleMap.display = 'block';
+        }else {
+            backToTopBtn.computedStyleMap.display = 'none';
+        }
+    });
+    backToTopBtn.addEventListener('click', () => {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+}
     if
         (!startBtn) {
         console.warn('Start quiz button not found. Check the HTML for an element with id "quiz-start".'); return;
