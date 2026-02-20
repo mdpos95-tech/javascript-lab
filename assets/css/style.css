@@ -516,7 +516,20 @@ li {
         max-width: 100%;
         white-space: normal;
     }
+.home-layout{
+    flex-direction: column;
+}
+.home-right {
+    flex: 1 1 100%;
+    width: 100%;
+}
+.image-box{
+    height: 180px;
+}
 
+.nav-links {
+    gap: 16px;
+}
 }
 
 @media (max-width: 480px) {
