@@ -112,7 +112,12 @@ document.addEventListener('DOMContentLoaded', () => {
                             else if (score >= 3) title = 'Hedge knight ⭐⭐';
                             else title = 'Hot Pie ⭐';
                             quizContainer.innerHTML = `<h2 class="quiz-title">Quiz Completed!</h2><p class="quiz-feedback">Thanks for playing! 🎉</p>`;
-                            <button class="quiz-restart-btn" type="button">Restart Quiz</button>
+                            <button class="quiz-restart-btn" type="button">Restart Quiz</button>;
+                            const restartBtn = quizContainer.querySelector('.quiz-restart-btn');
+                            restartBtn.addEventListener('click', () => {
+                                currentQuestionIndex = 0;
+                                score = 0;
+                                renderQuestion(); });
                         }
                     }, 700);
                 });
