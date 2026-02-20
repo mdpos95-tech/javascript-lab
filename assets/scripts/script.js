@@ -24,10 +24,11 @@ document.addEventListener('DOMContentLoaded', () => {
                 answers: ["Longclaw", "Oathkeeper", "Ice", "Heartstopper"],
                 correctIndex: 0
             },
-        {
-            text: "Who built the Wall in the North?",
-            answers: ["The Children of the Forest", "The First Men", "Brandon the Builder", "Bob the Builder"],
-            correctIndex: 2 },
+            {
+                text: "Who built the Wall in the North?",
+                answers: ["The Children of the Forest", "The First Men", "Brandon the Builder", "Bob the Builder"],
+                correctIndex: 2
+            },
 
             {
                 text: "Which house's sigil is a three-headed dragon?",
@@ -45,7 +46,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 correctIndex: 3
             },
             {
-                text:"What is the name of Jon Snows direwolf?",
+                text: "What is the name of Jon Snows direwolf?",
                 answers: ["Ghost", "Nymeria", "Summer", "Shaggydog"],
                 correctIndex: 0
             },
@@ -54,22 +55,23 @@ document.addEventListener('DOMContentLoaded', () => {
                 answers: ["Cersei Lannister", "Daenerys Targaryen", "Sansa Stark", "Margaery Tyrell"],
                 correctIndex: 1
             },
-                {
-                    text:"Who is the Lord Commander of the Kingsguard at the start of the show?",
-                    answers: ["Ser Arthur Dayne", "Ser Barristan Selmy", "Ser Meryn Trant", "Ser Jorah Mormont"],
-                    correctIndex: 1
-                },
-                {
-                    text: "What is the name of the poison used to kill King Joffrey?",
-                    answers: ["The Strangler", "The Long Farewell", "The Tears of Lys", "The Red Viper's Venom"],
-                    correctIndex: 0},
-                    {
-                        text: "Who is the youngest Stark child?",
-                        answers: ["Robb", "Sansa", "Arya", "Rickon"],
-                        correctIndex: 3
-                    },
+            {
+                text: "Who is the Lord Commander of the Kingsguard at the start of the show?",
+                answers: ["Ser Arthur Dayne", "Ser Barristan Selmy", "Ser Meryn Trant", "Ser Jorah Mormont"],
+                correctIndex: 1
+            },
+            {
+                text: "What is the name of the poison used to kill King Joffrey?",
+                answers: ["The Strangler", "The Long Farewell", "The Tears of Lys", "The Red Viper's Venom"],
+                correctIndex: 0
+            },
+            {
+                text: "Who is the youngest Stark child?",
+                answers: ["Robb", "Sansa", "Arya", "Rickon"],
+                correctIndex: 3
+            },
 
-        });
+        ];
 
 
         let currentQuestionIndex = 0;
@@ -110,6 +112,7 @@ document.addEventListener('DOMContentLoaded', () => {
                             else if (score >= 3) title = 'Hedge knight ⭐⭐';
                             else title = 'Hot Pie ⭐';
                             quizContainer.innerHTML = `<h2 class="quiz-title">Quiz Completed!</h2><p class="quiz-feedback">Thanks for playing! 🎉</p>`;
+                            <button class="quiz-restart-btn" type="button">Restart Quiz</button>
                         }
                     }, 700);
                 });
