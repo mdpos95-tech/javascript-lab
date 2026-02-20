@@ -54,7 +54,11 @@ startBtn.addEventListener('click', (event) => {
                                 const total = questions.length;
                                 const percentage = Math.round((score / total) * 100);
                                 let title = '';
-                                if (score === total) title = 
+                                if (score === total) title = 'Lord of the 7 Kingdoms ⭐⭐⭐⭐⭐';
+                                else if (score >= 7) title = 'Kingsguard ⭐⭐⭐⭐';
+                                else if (score >= 5) title = 'Household knight ⭐⭐⭐';
+                                else if (score >= 3) title = 'Hedge knight ⭐⭐';
+                                else title = 'Hot Pie ⭐';
                                 quizContainer.innerHTML = `<h2 class="quiz-title">Quiz Completed!</h2><p class="quiz-feedback">Thanks for playing! 🎉</p>`;
                             }
                         }, 700);
