@@ -51,6 +51,10 @@ startBtn.addEventListener('click', (event) => {
                             if (currentQuestionIndex < questions.length) {
                                 renderQuestion();
                             } else {
+                                const total = questions.length;
+                                const percentage = Math.round((score / total) * 100);
+                                let title = '';
+                                if (score === total) title = 
                                 quizContainer.innerHTML = `<h2 class="quiz-title">Quiz Completed!</h2><p class="quiz-feedback">Thanks for playing! 🎉</p>`;
                             }
                         }, 700);
