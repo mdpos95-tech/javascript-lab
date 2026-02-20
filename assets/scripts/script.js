@@ -105,6 +105,8 @@ document.addEventListener('DOMContentLoaded', () => {
                         } else {
                             const total = questions.length;
                             const percentage = Math.round((score / total) * 100);
+                            let resultTitle = '';
+                            let resultMessage = '';
                             let title = '';
                             if (score === total) title = 'Lord of the 7 Kingdoms ⭐⭐⭐⭐⭐';
                             else if (score >= 7) title = 'Kingsguard ⭐⭐⭐⭐';
