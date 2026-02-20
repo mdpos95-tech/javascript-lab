@@ -23,6 +23,7 @@ startBtn.addEventListener('click', (event) => {
             correctIndex: 0}];
 
             let currentQuestionIndex = 0;
+            let score = 0;
             function renderQuestion() {
                 const q = questions[currentQuestionIndex];
                 quizContainer.innerHTML = `
@@ -41,6 +42,7 @@ startBtn.addEventListener('click', (event) => {
                         if (answered) return;
                         answered = true;
                         const isCorrect = index === q.correctIndex;
+                        if (isCorrect) {score++;}
                         feedback.textContent = isCorrect ? 'Correct! ✅' : 'Wrong! ❌';
                         const allButtons = answersDiv.querySelectorAll('.answer-btn');
                         allButtons.forEach(btn => btn.disabled = true);
