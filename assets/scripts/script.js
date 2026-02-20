@@ -133,6 +133,16 @@ document.addEventListener('DOMContentLoaded', () => {
                                 currentQuestionIndex = 0;
                                 score = 0;
                                 renderQuestion(); });
+
+                                const homeBtn = 
+                                document.createElement('button');
+                                homeBtn.className = 'quiz-home-btn';
+                                homeBtn.textContent = 'Back to Home';
+                                quizContainer.appendChild(homeBtn);
+                                homeBtn.addEventListener('click', () => {
+                                    quizContainer.classList.add('hidden');
+                                    Intro.classList.remove('hidden');
+                                });
                         }
                     }, 700);
                 });
