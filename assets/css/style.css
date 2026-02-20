@@ -436,3 +436,19 @@ li {
 .quiz-questions {
     font-size: 1.3rem;
 }
+
+.quiz-restart-btn {
+    display: inline-block;
+    padding: 12px 28px;
+    font-size: 1rem;
+    font-weight: 600;
+    text-align: center;
+    color: #111;
+    background: #c9a24d;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    border-radius: 8px;
+    text-decoration: none;
+    cursor: pointer;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
