@@ -108,14 +108,27 @@ document.addEventListener('DOMContentLoaded', () => {
                             let resultTitle = '';
                             let resultMessage = '';
                             let title = '';
-                            if (score === total) title = 'Lord of the 7 Kingdoms ⭐⭐⭐⭐⭐';
-                            else if (score >= 7) title = 'Kingsguard ⭐⭐⭐⭐';
-                            else if (score >= 5) title = 'Household knight ⭐⭐⭐';
-                            else if (score >= 3) title = 'Hedge knight ⭐⭐';
-                            else title = 'Hot Pie ⭐';
-                            quizContainer.innerHTML = `<h2 class="quiz-title">Quiz Completed!</h2><p class="quiz-feedback">Thanks for playing! 🎉</p>`;
-                            <button class="quiz-restart-btn" type="button">Restart Quiz</button>;
-                            const restartBtn = quizContainer.querySelector('.quiz-restart-btn');
+                            if (score === total) {title = 'Lord of the 7 Kingdoms ⭐⭐⭐⭐⭐';
+                                title = 'Lord of the 7 Kingdoms ⭐⭐⭐⭐⭐';
+                                message = 'Perfect score! You truly rule Westeros! 👑';
+                            } else if (score >= 7) {
+                                title = 'Kingsguard ⭐⭐⭐⭐';
+                            message = '';
+                            } else if (score >= 5) {
+                                title = 'Household knight ⭐⭐⭐';
+                                message = '';
+                            } else if (score >= 3) {
+                                title = 'Hedge knight ⭐⭐';
+                                message = '';
+                            } else {
+                                title = 'Hot Pie ⭐';
+                                message = '';
+                            }
+                            quizContainer.innerHTML = `<h2 class="quiz-title">${title}</h2><p class="quiz-feedback">${message}</p>`;
+                            const restartBtn = document.createElement('button');
+                            restartBtn.className = 'quiz-restart-btn';
+                            restartBtn.textContent = 'Restart Quiz';
+                            quizContainer.appendChild(restartBtn);
                             restartBtn.addEventListener('click', () => {
                                 currentQuestionIndex = 0;
                                 score = 0;
