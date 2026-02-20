@@ -516,23 +516,49 @@ li {
         max-width: 100%;
         white-space: normal;
     }
-.home-layout{
-    flex-direction: column;
-}
-.home-right {
-    flex: 1 1 100%;
-    width: 100%;
-}
-.image-box{
-    height: 180px;
-}
 
-.nav-links {
-    gap: 16px;
-}
+    .home-layout {
+        flex-direction: column;
+    }
+
+    .home-right {
+        flex: 1 1 100%;
+        width: 100%;
+    }
+
+    .image-box {
+        height: 180px;
+    }
+
+    .nav-links {
+        gap: 16px;
+    }
 }
 
 @media (max-width: 480px) {
+
+    header nav {
+        flex-direction: column;
+        gap: 10px;
+        align-items: center;
+    }
+
+    .brand img {
+        max-width: 140px;
+        height: auto;
+    }
+
+    .header-sigils {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 8px;
+    }
+
+    .header-sigils img {
+        width: 38px;
+        height: auto;
+    }
 
     h1 {
         font-size: 1.6rem;
@@ -559,33 +585,60 @@ li {
         transform: translateX(-50%);
     }
 
-    .home-layout{
+    .home-layout {
         flex-direction: column;
         gap: 16px;
     }
 
+    .home-left,
     .home-right {
         flex: 1 1 100%;
         width: 100%;
     }
-    .image-box{
+
+    #home {
+        width: 100%;
+        max-width: 100%;
+        margin: 0;
+        padding: 12px;
+    }
+
+    .image-box {
         height: 160px;
     }
 
     .nav-links {
-        gap: 12px;
+        gap: 10px;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 0;
     }
-.nav-links a{
-    padding: 8px 12px;
-    font-size: 0.95rem;
-}
-     ul{
+
+    .nav-links a {
+        padding: 8px 12px;
+        font-size: 0.95rem;
+        white-space: nowrap;
+    }
+
+    ul {
         margin-left: 0;
         padding-left: 16px;
-     }
-     #home {
-        padding: 12px;
-     }
+    }
 
-     
+    #home {
+        padding: 12px;
+    }
+
+    #quiz-start {
+        position: static;
+        width: 100%;
+        max-width: 320px;
+        margin: 12px auto 0;
+        display: block;
+    }
+
+    .quiz-cta {
+        display: flex;
+        justify-self: center;
+    }
 }
