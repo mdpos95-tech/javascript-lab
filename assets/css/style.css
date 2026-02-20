@@ -546,5 +546,33 @@ li {
         transform: translateX(-50%);
     }
 
-    .home-layou
+    .home-layout{
+        flex-direction: column;
+        gap: 16px;
+    }
+
+    .home-right {
+        flex: 1 1 100%;
+        width: 100%;
+    }
+    .image-box{
+        height: 160px;
+    }
+
+    .nav-links {
+        gap: 12px;
+    }
+.nav-links a{
+    padding: 8px 12px;
+    font-size: 0.95rem;
+}
+     ul{
+        margin-left: 0;
+        padding-left: 16px;
+     }
+     #home {
+        padding: 12px;
+     }
+
+     
 }
