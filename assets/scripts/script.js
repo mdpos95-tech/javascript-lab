@@ -6,13 +6,12 @@ document.addEventListener('DOMContentLoaded', () => {
         else{
             backToTopBtn.style.display = 'none';
     window.addEventListener('scroll', () => {
-        const scrollPosition = window.scrollY + window.innerHeight;
-        const pageHeight = document.documentElement.scrollHeight;
-        if (scrollPosition >= pageHeight - 600) {
-            backToTopBtn.style.display = 'block';
-        }else {
-            backToTopBtn.style.display = 'none';
+        if (window.scrollY > 300) {
+            backToTopBtn.classList.add('show');
+        } else {
+            backToTopBtn.classList.remove('show');
         }
+        
     });
     backToTopBtn.addEventListener('click', () => {
         e.preventDefault();
