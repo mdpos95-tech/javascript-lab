@@ -54,7 +54,21 @@ document.addEventListener('DOMContentLoaded', () => {
                 answers: ["Cersei Lannister", "Daenerys Targaryen", "Sansa Stark", "Margaery Tyrell"],
                 correctIndex: 1
             },
-            
+                {
+                    text:"Who is the Lord Commander of the Kingsguard at the start of the show?",
+                    answers: ["Ser Arthur Dayne", "Ser Barristan Selmy", "Ser Meryn Trant", "Ser Jorah Mormont"],
+                    correctIndex: 1
+                },
+                {
+                    text: "What is the name of the poison used to kill King Joffrey?",
+                    answers: ["The Strangler", "The Long Farewell", "The Tears of Lys", "The Red Viper's Venom"],
+                    correctIndex: 0},
+                    {
+                        text: "Who is the youngest Stark child?",
+                        answers: ["Robb", "Sansa", "Arya", "Rickon"],
+                        correctIndex: 3
+                    },
+
         });
 
 
