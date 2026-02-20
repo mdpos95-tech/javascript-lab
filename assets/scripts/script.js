@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', () => {
     if (!backToTopBtn) {
         console.warn('Back to top button not found');}
         else{
-            backToTopBtn.style.display = 'none';
+            backToTopBtn.style.display = 'block';
     window.addEventListener('scroll', () => {
         if (window.scrollY > 300) {
             backToTopBtn.classList.add('show');
@@ -13,7 +13,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }
         
     });
-    backToTopBtn.addEventListener('click', () => {
+    backToTopBtn.addEventListener('click', (e) => {
         e.preventDefault();
         window.scrollTo({ top: 0, behavior: 'smooth' });
     });
