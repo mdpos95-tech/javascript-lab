@@ -59,7 +59,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 correctIndex: 0
             },
             {
-                text: "Who killed King Geoffrey Baratheon?",
+                text: "Who killed King Joffrey Baratheon?",
                 answers: ["Tyrion Lannister", "Cersei Lannister", "Oberyn Martell", "Olenna Tyrell"],
                 correctIndex: 3
             },
