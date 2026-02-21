@@ -479,6 +479,25 @@ li {
 }
 
 @media (max-width: 768px) {
+header,
+.header-panel {
+    position: relative;
+}
+
+.header-sigils{
+    
+    display: none;
+    
+
+}
+
+.header-sigils img{
+    opacity: 0.8;
+    height: 28px;
+    width: auto;
+    display: block;
+}
+
     body {
         padding: 0 16px;
     }
@@ -492,6 +511,8 @@ li {
         flex-wrap: wrap;
         justify-content: center;
         gap: 10px;
+        position: relative;
+        z-index: 20;
     }
 
     .home-layout {
@@ -542,6 +563,16 @@ li {
         top: auto;
         bottom: auto;
         margin: 16px auto 0;
+    }
+
+    header nav{
+        position: relative;
+        z-index: 20;
+    }
+
+    .audio{
+        position: relative;
+        z-index: 10;
     }
 }
 
