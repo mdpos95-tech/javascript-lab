@@ -533,6 +533,16 @@ li {
     .nav-links {
         gap: 16px;
     }
+
+    .quiz-cta {
+        position: static;
+        transform: none;
+        left: auto;
+        right: auto;
+        top: auto;
+        bottom: auto;
+        margin: 16px auto 0;
+    }
 }
 
 @media (max-width: 480px) {

@@ -1,0 +1,39 @@
+Project overview-
+
+The project was a single page interactive fan website targetting die hard Game of Thrones fans. The goal of the project was to create an engaging Game of Thrones themed website for fans to test themselves with an interactive quiz that included a mix of easier questions for the more casual fan, but also included some harder questioins to challenge die hard fans, while sticking to the focus of combining structured content, custom styling, and Javascript interactivity. The site includes a navigation system, themed content sections, and an interactive quiz that allows users to test their knowledge of the Seven Kingdoms.
+
+Design concept-
+
+The concept for this project was to design a fantasy themed quiz site aimed at fans of the series. I tested it on a colleague in work who is a massive fan of the franchise, he really liked the design of the website, and as an avid reader of the books he enjoyed the challenge and wanted to try the quiz again as he got 9/10 rather than the 10/10 title he wanted. I also created a wireframe in the planning stages which I used as a template with some concept ideas changing and evolving as I brought the idea to life, the goal of the wireframe was to outline structure, section structure, and placement of interactive elements such as navigation links and the interactive quiz button.
+
+Design decisions-
+
+I designed the navigation with simplicity in mind for easy navigation for all ages, with clear labelled buttons, on smaller screens navigation elements wrap and stack to ensure usability without overcrowding the interface.
+The Quiz was designed as the primary interactive feature to test myself in Javascript while also aiming for something fun and challenging for the users, I made it clear to users before starting the Quiz that there was a rating system sothere was an aim to gain the title you think your knowledge of the franchise could achieve, and it encourages progression and reward. I styled the Quiz button in a way to make it stand out visually from surrounding content..
+I made the website as accesible as possible with readable font sizes and contrasting colour schemes for easy navigation and usability, Interactive elements were designed to provide clear visual feedback.
+
+Development process-
+
+I began the process by outlining the project concept and identifying core features I wanted to implement, which included navigation, content sections, and an interactive Quiz. The wireframe was created to plan layout and visual hierarchy before implementation began. It is structured using HTML, CSS and Javascript files. I began with my HTML to build the structure of the website, trying to create clear class and ID names which would then be visually brought to life using CSS, starting with base styles and layouts before adding visual enhancements as I progressed. Card style containers were used to improve readability over background images. Javascript was used to implement interactive features and feedback for the user with dynamic content updates by responding to user inputs such as button clicks and quiz progression.
+I then tested the website across multiple media screen sizes to ensure responsiveness and usability, Layout issues were identified and resolved through CSS adjustments. Functionality was also tested to ensure interactive elements behaved as expected when interacted with.Final refinements focused on improving layout consistency and visual clarity. unnecessary styling and positioning rules were edited or removed/simplified to improve performance.
+The project was controlled using Git and hosted on GitHub pages. Regular commits were made throughout development to track progress and changes,The final version was tested to ensure consistency.
+
+Challenges faced-
+
+Responsive layout issues were one of the main challenges when trying to adapt for smaller screens as I faced parent elemets overriding media functions causing lots of overlap which was tuned using CSS, these problems required careful use of media queries, flexbox adjustments and inspection tools to identify which elements were effecting layout flow.
+Some components used absolue or relative positioning for visual design purposes which created unexpected behaviour on mobile and tablet screens, which led to multiple refinements.
+Positioning the quiz button consistently across different screen sizes required additional layout refinements, The balance between visual prominence and responsive behaviour required adjustments to container layout rather than relying on fixed positioning.
+Differences between medias made debugging more complex, Browser developer tools were used extensively to test layouts, inspect elements and identify CSS rules that had caused uninteded side effects.
+Earlier issues I faced were HTML and CSS related when trying to implement images that fit borders as I envisioned which took many trial and error testing.
+Lastly, during development, managing Javascript logic and function nesting presented challenges, particularly when handling quiz flow and user interaction, trying to ensure event listeners, conditional logic and function definitions were correctly nested, which was essential for preventing unexpected behaviour such as functions not firing or code executing out of order.
+Debugging this took careful review of opening and closing brackets. Console logging was used to trace logic flow and ensuring functions were executed at the correct time. Lots of time went into structuring Javascript correctly and logically so the functions would flow as intended.
+
+How I implemented Javascript interactivity-
+
+Javascript was used to implement dynamic behaviour and user interaction throughout the website, with the quiz being the primary interactive feature.
+Interactivity begins when the user clicks the Start Quiz button, an event listener is attached to this element to detect user interaction and prevent default link behaviour. When triggered the descriptive introdctory quiz content was hidden and the quiz container is displayed dynamically using JS class manipulation, allowing content to change without a page reload or external link opening.
+Questions were stored as objects using JS arrays, each containing the question text, a list of possible answers and the index of which answer was correct. A dedicated function renders each question and its correspondinganswer options to the page. Answer buttons are generated programmatically to ensure the quiz content is fully controlled through JS rather than HTML.
+Each answer option is assigned a click event listener, when a user selects an answer JS compares the selected option against the correct answer index and updates the quiz score accordingly, with visual and logical feedback provided depending on the answer picked which reinforces engagement and ensure a clear interaction flow.
+A score variable is maintained through the quiz to track correct answers, At the end of the quiz conditional logic is used to evaluate final score and assign a rank or title based on predefined score ranges.
+JS manages the quiz state by tracking the current question index and ensuring the questions progress in sequence. Logic checks are used to determine when the quiz has finished and the result summary is displayed. I added optional controls such as restarting the quiz or returning to the home section which are implemented using event listeners and state restes.
+All the Javascript functions were implemented in a way that enhanced the existing HTML rather than replace it, which ensured the website remained structured and readable even before interactivity is applied.
