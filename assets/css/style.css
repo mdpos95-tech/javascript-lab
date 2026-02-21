@@ -539,6 +539,13 @@ li {
 
 nav {flex-wrap: wrap;}
 
+header{
+    padding-bottom: 10px;
+}
+
+header,
+nav {overflow: visible;}
+
 .audio{
     position: static;
     transform: none;
@@ -563,19 +570,31 @@ nav {flex-wrap: wrap;}
     }
 
     .header-sigils {
+        width: 100%;
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
+        align-items: center;
         gap: 8px;
         padding: 0;
         margin: 8px auto 0;
         position: static;
+        transform: none;
+        min-height: 50px;
 
     }
 
     .header-sigils img {
-        width: 38px;
+        width: 34px;
         height: auto;
+        position: static;
+        display: block;
+        margin: auto;
+        padding: 0;
+        transform: none;
+        max-height: 34px;
+        object-fit: contain;
+
     }
 
     h1 {
