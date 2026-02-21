@@ -651,6 +651,15 @@ nav {overflow: visible;}
         max-width: 100%;
     }
 
+    header nav a,
+    .nav-links a{
+        font-size: 0.85rem;
+        padding: 6px 10px;
+        border-radius: 6px;
+        position: relative;
+        z-index: 5;
+    }
+
     ul {
         margin-left: 0;
         padding-left: 16px;
@@ -692,34 +701,23 @@ nav {overflow: visible;}
     }
 
 
-    .header-sigils {
-        width: 100% !important;
-        height: auto !important;
-        display: flex !important;
-        flex-wrap: wrap !important;
-        justify-content: center !important;
-        align-items: center !important;
-        gap: 10px !important;
-        padding: 8px 0 !important;
-        margin: 8px auto 0 !important;
-        position: static !important;
-        transform: none !important;
-        min-height: 50px !important;
-        overflow: visible !important;}
+   .header-sigils img{
+    height: 28px;
+    width: auto;
+    display: block;
+   }
 
-        .header-sigils img {
-        width: 44px !important;
-        height: 44px !important;
-        max-width: none !important;
-        position: static !important;
-        display: block !important;
-        transform: none !important;
-        object-fit: contain !important;
+.header-sigils{
+    position: relative;
+    z-index: 1;
+    pointer-events: none;
+    opacity: 0.75;
+}
 
-    }
+}
 
 
-    }
+    
 
 
     html,
