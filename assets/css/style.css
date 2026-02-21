@@ -541,6 +541,7 @@ li {
         flex-direction: column;
         gap: 10px;
         align-items: center;
+        display: flex;
     }
 
     .brand img {
@@ -553,6 +554,8 @@ li {
         flex-wrap: wrap;
         justify-content: center;
         gap: 8px;
+        padding: 0;
+        margin: 0;
     }
 
     .header-sigils img {
@@ -561,11 +564,11 @@ li {
     }
 
     h1 {
-        font-size: 1.6rem;
+        font-size: 1.5rem;
     }
 
     h2 {
-        font-size: 1.2rem;
+        font-size: 1.5rem;
     }
 
     p,
@@ -580,44 +583,61 @@ li {
     }
 
     .back-to-top {
-        bottom: 14px;
         left: 50%;
         transform: translateX(-50%);
+        bottom: 14px;
     }
 
     .home-layout {
+        display: flex;
         flex-direction: column;
         gap: 16px;
+        align-items: stretch;
     }
 
     .home-left,
     .home-right {
-        flex: 1 1 100%;
-        width: 100%;
-    }
-
-    #home {
+        flex: 1 1 auto;
         width: 100%;
         max-width: 100%;
-        margin: 0;
-        padding: 12px;
     }
 
+    #home,
+    main,
+    section {
+        width: 100%;
+        padding:12px;
+        margin: 0 auto;
+    }
+
+
     .image-box {
-        height: 160px;
+        min-height: 160px;
+        width: 100%;
+        height: auto;
     }
 
     .nav-links {
-        gap: 10px;
+        display: flex;
+        gap: 8px;
         flex-wrap: wrap;
         justify-content: center;
         padding: 0;
+        margin: 0;
     }
 
+.nav-links li {
+    list-style: none;
+    margin: 0;}
+
     .nav-links a {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
         padding: 8px 12px;
         font-size: 0.95rem;
-        white-space: nowrap;
+        white-space: normal;
+        text-align: center;
     }
 
     ul {
@@ -629,16 +649,39 @@ li {
         padding: 12px;
     }
 
-    #quiz-start {
-        position: static;
-        width: 100%;
-        max-width: 320px;
-        margin: 12px auto 0;
-        display: block;
-    }
+
 
     .quiz-cta {
         display: flex;
-        justify-self: center;
+        justify-content: center;
+        width: 100%;
+    }
+
+    img {
+        max-width: 100%;
+        height: auto;
+        min-height: 160px;
+    }
+
+    * {
+        max-width: 100%;
+        box-sizing: border-box;
+    }
+
+    .home-right {
+        flex-basis: auto;
+    }
+
+    *,
+    *::before,
+    *::after {
+        box-sizing: border-box;
+        max-width: 100%;
+
     }
 }
+
+    html,
+    body {
+        overflow-x: hidden;
+    }
