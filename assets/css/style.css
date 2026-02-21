@@ -537,25 +537,29 @@ li {
 
 @media (max-width: 480px) {
 
-nav {flex-wrap: wrap;}
+    nav {
+        flex-wrap: wrap;
+    }
 
-header{
-    padding-bottom: 10px;
-}
+    header {
+        padding-bottom: 10px;
+    }
 
-header,
-nav {overflow: visible;}
+    header,
+    nav {
+        overflow: visible;
+    }
 
-.audio{
-    position: static;
-    transform: none;
-    left: auto;
-    right: auto;
-    top: auto;
-    bottom: auto;
-    margin: 8px auto 0;
-    align-self: center;
-}
+    .audio {
+        position: static;
+        transform: none;
+        left: auto;
+        right: auto;
+        top: auto;
+        bottom: auto;
+        margin: 8px auto 0;
+        align-self: center;
+    }
 
     header nav {
         flex-direction: column;
@@ -569,7 +573,7 @@ nav {overflow: visible;}
         height: auto;
     }
 
-    
+
 
 
     h1 {
@@ -615,7 +619,7 @@ nav {overflow: visible;}
     main,
     section {
         width: 100%;
-        padding:12px;
+        padding: 12px;
         margin: 0 auto;
     }
 
@@ -636,9 +640,10 @@ nav {overflow: visible;}
         width: 100%;
     }
 
-.nav-links li {
-    list-style: none;
-    margin: 0;}
+    .nav-links li {
+        list-style: none;
+        margin: 0;
+    }
 
     .nav-links a {
         display: inline-flex;
@@ -652,7 +657,7 @@ nav {overflow: visible;}
     }
 
     header nav a,
-    .nav-links a{
+    .nav-links a {
         font-size: 0.85rem;
         padding: 6px 10px;
         border-radius: 6px;
@@ -701,26 +706,47 @@ nav {overflow: visible;}
     }
 
 
-   .header-sigils img{
-    height: 28px;
-    width: auto;
-    display: block;
-   }
-
-.header-sigils{
-    position: relative;
-    z-index: 1;
-    pointer-events: none;
-    opacity: 0.75;
-}
-
-}
-
-
-    
-
-
-    html,
-    body {
-        overflow-x: hidden;
+    .header-sigils img {
+        height: 28px;
+        width: auto;
+        display: block;
     }
+
+    .header-sigils {
+        position: relative;
+        z-index: 1;
+        pointer-events: none;
+        opacity: 0.75;
+    }
+#quiz-start,
+a#quiz-start,
+.quiz-cta #quiz-start,
+a.quiz-btn{
+    display: inline-block;
+    margin: 12px auto 0;
+    text-align: center;
+    width: min(320px, 90vw);
+}
+
+.quiz-cta{
+    display: flex;
+    justify-content: center;
+    margin: 16px auto 0;
+    width: 100%;
+    position: static;
+    inset: auto;
+    bottom: auto;
+    right: auto;
+    left: auto;
+    top: auto;
+}
+}
+
+
+
+
+
+html,
+body {
+    overflow-x: hidden;
+}
