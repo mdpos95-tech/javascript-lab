@@ -569,33 +569,8 @@ nav {overflow: visible;}
         height: auto;
     }
 
-    .header-sigils {
-        width: 100%;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        align-items: center;
-        gap: 8px;
-        padding: 0;
-        margin: 8px auto 0;
-        position: static;
-        transform: none;
-        min-height: 50px;
+    
 
-    }
-
-    .header-sigils img {
-        width: 34px;
-        height: auto;
-        position: static;
-        display: block;
-        margin: auto;
-        padding: 0;
-        transform: none;
-        max-height: 34px;
-        object-fit: contain;
-
-    }
 
     h1 {
         font-size: 1.5rem;
@@ -715,7 +690,37 @@ nav {overflow: visible;}
         max-width: 100%;
 
     }
-}
+
+
+    .header-sigils {
+        width: 100% !important;
+        height: auto !important;
+        display: flex !important;
+        flex-wrap: wrap !important;
+        justify-content: center !important;
+        align-items: center !important;
+        gap: 10px !important;
+        padding: 8px 0 !important;
+        margin: 8px auto 0 !important;
+        position: static !important;
+        transform: none !important;
+        min-height: 50px !important;
+        overflow: visible !important;}
+
+        .header-sigils img {
+        width: 44px !important;
+        height: 44px !important;
+        max-width: none !important;
+        position: static !important;
+        display: block !important;
+        transform: none !important;
+        object-fit: contain !important;
+
+    }
+
+
+    }
+
 
     html,
     body {
