@@ -364,7 +364,7 @@ li {
     content: "";
     position: absolute;
     inset: 0;
-    background-image: url("/assets/images/iron_throne.png");
+    background-image: url("../images/iron_throne.png");
     border-radius: 8px;
     opacity: 0.9;
     background-position: center;
